@@ -1,0 +1,15 @@
+.notification {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.notification ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.notification li {
+    margin-bottom: 0.5rem;
+}

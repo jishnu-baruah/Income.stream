@@ -1,0 +1,73 @@
+/* DashboardPage.css */
+
+/* Container for the entire page */
+.dashboard-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+    /* Light gray background */
+    font-family: Arial, sans-serif;
+    /* Font styling */
+}
+
+/* Header styling */
+.dashboard-page .header {
+    background-color: #333;
+    /* Dark background for header */
+    color: white;
+    /* White text */
+    padding: 10px 20px;
+    /* Padding around text */
+    text-align: center;
+    /* Center-align text */
+}
+
+/* Container for the main content */
+.content {
+    display: flex;
+    flex: 1;
+    /* Fill remaining space */
+    padding: 20px;
+    /* Space around content */
+    gap: 20px;
+    /* Space between Dashboard and Notification */
+}
+
+/* Dashboard styling */
+.dashboard {
+    flex: 3;
+    /* Takes up more space compared to Notification */
+    background-color: white;
+    /* White background for dashboard */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    padding: 20px;
+    /* Padding inside dashboard */
+}
+
+/* Notification styling */
+.notification {
+    flex: 1;
+    /* Takes up less space compared to Dashboard */
+    background-color: #fff;
+    /* White background for notifications */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    padding: 20px;
+    /* Padding inside notification */
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        /* Stack Dashboard and Notification vertically on small screens */
+        gap: 10px;
+        /* Reduce space between components */
+    }
+}

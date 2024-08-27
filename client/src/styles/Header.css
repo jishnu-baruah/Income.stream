@@ -1,0 +1,54 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #9aa0a5;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.logout-button {
+    background-color: #2e2a2a;
+    /* Bootstrap danger color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #424242;
+    /* Darker shade for hover */
+}
+
+.logout-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(19, 19, 19, 0.5);
+    /* Focus ring for accessibility */
+}

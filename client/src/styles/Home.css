@@ -1,0 +1,67 @@
+/* Home.css */
+
+/* Container for the home page */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center-align items horizontally */
+    justify-content: center;
+    /* Center-align items vertically */
+    height: 100vh;
+    /* Full viewport height */
+    background-color: #f9f9f9;
+    /* Light background color */
+    font-family: Arial, sans-serif;
+    /* Font styling */
+    text-align: center;
+    /* Center-align text */
+    padding: 20px;
+    /* Padding around the container */
+}
+
+/* Heading styling */
+.home h2 {
+    font-size: 2rem;
+    /* Large font size */
+    color: #333;
+    /* Dark text color */
+    margin-bottom: 10px;
+    /* Space below the heading */
+}
+
+/* Paragraph styling */
+.home p {
+    font-size: 1.2rem;
+    /* Slightly larger font size */
+    color: #555;
+    /* Slightly lighter text color */
+    margin-bottom: 20px;
+    /* Space below the paragraph */
+}
+
+/* Button styling */
+.home button {
+    background-color: #007bff;
+    /* Blue background */
+    color: white;
+    /* White text */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 10px 20px;
+    /* Padding inside the button */
+    font-size: 1rem;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition for background color */
+}
+
+/* Button hover effect */
+.home button:hover {
+    background-color: #0056b3;
+    /* Darker blue background on hover */
+}
