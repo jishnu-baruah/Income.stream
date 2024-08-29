@@ -18,14 +18,14 @@ function Home() {
             }
         };
         checkConnection();
-    }, [navigate]);
+    }, []);
 
     // Handle MetaMask connection
     const handleConnect = async () => {
         try {
             const account = await requestAccount();
             setAccount(account);
-            navigate('/dashboard'); // Redirect to Dashboard after successful connection
+            // navigate('/dashboard'); // Redirect to Dashboard after successful connection
         } catch (error) {
             console.error('Connection failed:', error);
             alert('Failed to connect to MetaMask');
@@ -37,7 +37,10 @@ function Home() {
             <h2>Welcome to Income.stream</h2>
             <p>Experience decentralized finance like never before</p>
             {account ? (
-                <p>Connected as: {account}</p>
+                <div>
+                    <p>Connected as: {account}</p>
+                    <button onClick={() => navigate('/dashboard')}>Go to Dashboard</button>
+                </div>
             ) : (
                 <button onClick={handleConnect}>Connect with MetaMask</button>
             )}

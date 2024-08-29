@@ -18,7 +18,7 @@ function Header() {
                 <a href="/">Home</a>
                 <a href="/dashboard">Dashboard</a>
                 <a href="/profile">Profile</a>
-                <button onClick={handleLogout} className="logout-button">Logout</button>
+                {/* <button onClick={handleLogout} className="logout-button">Logout</button> */}
             </nav>
         </header>
     );
