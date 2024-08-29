@@ -14,7 +14,6 @@ function Home() {
                 const accounts = await window.ethereum.request({ method: 'eth_accounts' });
                 if (accounts.length > 0) {
                     setAccount(accounts[0]);
-                    navigate('/dashboard'); // Redirect to Dashboard if connected
                 }
             }
         };
@@ -35,7 +34,7 @@ function Home() {
 
     return (
         <div className="home">
-            <h2>Welcome to DeFi Platform</h2>
+            <h2>Welcome to Income.stream</h2>
             <p>Experience decentralized finance like never before</p>
             {account ? (
                 <p>Connected as: {account}</p>
